@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone Number Tracker</title>
+    <style>
+      body {
+        background-color: #dee4ff;
+      }
+      .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 90vh;
+      }
+      h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      input{
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+        display: block;
+        border-color: gray;
+      }
+      label{
+        font-size: large;
+      }
+      input[type = 'submit']{
+        width: 100px;
+        background-color: blueviolet;
+        margin: 10px 0 20px 10px;
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Phone Number Tracker</h1>
+      <form method="post" action="/result">
+        <label for="number">Enter phone number:</label>
+        <input type="text" value="+" name="number" id="number">
+        <input type="submit" value="Track">
+      </form>
+      </div>
+      
+    </div>
+  </body>
+</html>
